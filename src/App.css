@@ -36,3 +36,129 @@
     transform: rotate(360deg);
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25vh;
+}
+.card {
+  background-color: #61dafb;
+  width: 250px;
+  background-color: #f4f5f9;
+  border: 2px solid #ebecf0;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  justify-content: flex-start;
+}
+.card .logo {
+  width: 60px;
+  margin: 20px auto 20px;
+}
+.logo img {
+  width: 100%;
+}
+.card h2 {
+  color: #d11f40;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0;
+}
+.card p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #a7a8aa;
+  /* margin-top: 0; */
+}
+.input-file {
+  width: 60px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 8px 18px 8px 18px;
+  color: #d11f40;
+  border: 1px solid #d11f40;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  /* display */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#image {
+  display: none;
+}
+
+/* detail */
+.row {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 3px;
+  width: 300px;
+  position: relative;
+}
+
+/* file-type */
+.left .png {
+  width: 35px;
+  position: absolute;
+  background-color: #a7a8aa;
+  margin: 35px 15px 15px 10px;
+  color: white;
+}
+.detail-row {
+  /* background-color: lightgreen; */
+  width: 135px;
+  height: 57px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.detail-row h1 {
+  /* background-color: lightcoral; */
+  margin-top: 10px;
+  font-size: 14px;
+  color: #a7a8aa;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* border: 1px solid black; */
+}
+.detail-row p {
+  /* background-color: aquamarine; */
+  font-size: 10px;
+  color: #a7a8aa;
+}
+
+/* hidden */
+.hidden {
+  display: none;
+}
+
+/* close button */
+.right img:hover {
+  cursor: pointer;
+}
