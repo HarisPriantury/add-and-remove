@@ -29,7 +29,7 @@ export default function Card() {
     const formatFile = fileName.split(".");
     const formatFileName = formatFile[formatFile.length - 1];
 
-    console.log(`Add file ${fileName} format "${formatFileName}" success`);
+    console.log(`Add file ${fileName} format "${formatFileName}" success !`);
 
     setInputList(inputList.concat(<Detail format={formatFileName} nama={fileName} day={tanggal} month={bulan} fullYear={tahun} hour={jam} minute={menit} second={detik} key={inputList.length} />));
   };
